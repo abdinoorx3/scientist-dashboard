@@ -1,0 +1,11 @@
+/node_modules
+/.next/
+/out/
+/public/runtime/
+/public/research-assets/mpmath-1.3.0-py3-none-any.whl
+next-env.d.ts
+*.tsbuildinfo
+.DS_Store
+*.pem
+.env*
+npm-debug.log*

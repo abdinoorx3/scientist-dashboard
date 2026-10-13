@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite the Scientist Dashboard and the Constructive Access reference for research use."
+type: software
+title: "Scientist Dashboard: Constructive Access browser workspace"
+authors:
+  - family-names: "Abdinoor"
+    affiliation: "2D Labs"
+version: "1.0.0"
+date-released: "2026-10-13"
+url: "https://2dlabs.org/dashboard"
+repository-code: "https://github.com/abdinoorx3/scientist-dashboard"
+abstract: "A browser interface to the released Constructive Access 0.10.0 research toolkit for bounded finite-instrument contracts, independent report verification, and exact replay of retained simulated detector-calibration records."
