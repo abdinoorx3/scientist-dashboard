@@ -4,7 +4,7 @@ import { assetPath } from './asset-path'
 
 export const metadata: Metadata = {
   title: 'Scientist Dashboard — Constructive Access / 2D Labs',
-  description: 'Analyze Constructive Access contracts, independently check reports, and replay retained simulated detector-calibration records in your browser.',
+  description: 'Design exact access experiments, inspect hidden-state models, run verified sensitivity sweeps, reconstruct linear targets with minimax bounds, and replay retained simulated detector records in your browser.',
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

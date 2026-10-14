@@ -1,12 +1,13 @@
 {
   "name": "2d-labs-scientist-dashboard",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "engines": { "node": ">=20.9.0" },
   "scripts": {
     "dev": "next dev",
     "prepare:runtime": "node scripts/prepare-browser-runtime.mjs",
     "verify:inputs": "node scripts/verify-release-inputs.mjs",
+    "verify:worker": "node scripts/verify-dashboard-worker.mjs",
     "prebuild": "npm run prepare:runtime && npm run verify:inputs",
     "build": "next build",
     "lint": "eslint .",

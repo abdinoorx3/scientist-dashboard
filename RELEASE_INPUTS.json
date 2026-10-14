@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "dashboard_version": "1.0.0",
+  "dashboard_version": "1.1.0",
   "research_toolkit_version": "0.10.0",
-  "origin": "Working Scientist Dashboard implementation and released Constructive Access inputs served at https://2dlabs.org/dashboard.",
+  "origin": "Scientist Dashboard 1.1.0 browser workspace served at https://2dlabs.org/dashboard, adapted for independent standalone builds.",
   "scientific_code_modified": false,
   "files_sha256": {
-    "app/dashboard/ScienceDashboard.tsx": "a75568ce896bc9c38d07f1a9dcfb158c4245752598fa515359d0e5e8edd47b34",
-    "app/dashboard/dashboard.module.css": "d6e65258e347c7c40378ae667171a4b13bc3431dad83b0ff7143eb2ec48f0ded",
-    "public/research-worker.js": "6e43591f1a38ad950cd6c30d64d3de782f6b8195ebd9e745c554e3d8cff34918",
+    "app/dashboard/ScienceDashboard.tsx": "cb0a9baa2d0066ae366b73a9d774def3987d946326d4317d25a6774f187ede85",
+    "app/dashboard/dashboard.module.css": "9abb0526d3c7fb1d58dd101fef08c53a4c6bdc332e47d4bfbdb4723d8eb92778",
+    "public/research-worker.js": "6e10446aef1f7b57a2a043a84d958787cbbc02f67f7b061054a721c638648245",
     "public/research-assets/active.json": "881aac05528b610f9c75c0efbe25c235778ade86a3e545c18bc985dc70d7dfa7",
     "public/research-assets/passive.json": "5dd213bdae8e019e57f006620dbc6388f61270be8890c68e3e00551a8ec62e20",
     "public/research-assets/calibrated.json": "1f65d9ca7c49d2b42f6ad6b7258d274db621926ab3721b1870e61dc3333b0359",
@@ -22,7 +22,12 @@
     "public/research-assets/COMMERCIAL_USE.txt": "dae6750b67ae2edee8288ffb9f632e87a9bd4e2ccaffbde0539d7735151b5dc3",
     "public/research-assets/PYODIDE-LICENSE.txt": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5",
     "public/research-assets/PYTHON-LICENSE.txt": "b0e25a78cffb43f4d92de8b61ccfa1f1f98ecbc22330b54b5251e7b6ba010231",
-    "public/research-assets/mpmath-1.3.0-py3-none-any.whl": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c"
+    "public/research-assets/mpmath-1.3.0-py3-none-any.whl": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+    "app/dashboard/SciencePlots.tsx": "be955a44b61798ed171ba670b3667b4bcb9d2aa5647f784b045bbc4942b254df",
+    "app/dashboard/plots.module.css": "f644f4c9ad0c45b6c6de41e453db5e2e4297a57c338f4291165b79ceda3bb697",
+    "app/dashboard/science-model.ts": "7443806a3d3efe796b0225e592bab2d70853e66cd38dfbbf50f7d77708567af8",
+    "scripts/verify-dashboard-worker.mjs": "268c4209ec7fae91df1fc038b3229c007458b9d533b3abbf4c7b07c683e2991d",
+    "app/layout.tsx": "98b97bd6ae40105c6a8307288c50fb55087256a4929b34bfe5bef710512cb6ae"
   },
   "original_files_sha256": {
     "app/dashboard/ScienceDashboard.tsx": "7d465c1e45197cbbebee2725fed8c2e96a0da8a994148a175a3380eba90dbf7e",
@@ -45,10 +50,16 @@
     "public/research-assets/mpmath-1.3.0-py3-none-any.whl": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c"
   },
   "publication_adaptations": {
-    "app/dashboard/ScienceDashboard.tsx": "Only resolve asset URLs through the configurable standalone base and replace company-wide site configuration with dashboard-specific public repository links. No workflow or scientific calculation logic changes.",
-    "public/research-worker.js": "Only resolve runtime and research asset URLs relative to worker location. Embedded Python adapter and calculation code unchanged.",
+    "app/dashboard/ScienceDashboard.tsx": "Expanded visual protocol builder, exact contract controls, checked sensitivity sweeps, linear inverse workspace, detector diagnostics and local notebook. Uses dashboard-specific repository links and the configurable standalone asset base.",
+    "public/research-worker.js": "Expanded bounded adapter for released toolkit analyze, verify, linear identification, minimax certificate and sensitivity operations. Research toolkit and frozen replay inputs unchanged. Runtime and research URLs resolve relative to the standalone worker.",
     "scripts/prepare-browser-runtime.mjs": "Verify pinned core runtime SHA-256 digests and prepare exact mpmath overlay wheel for independent reproducible builds.",
-    "app/layout.tsx": "Dashboard-specific navigation; private company website pages and provider configuration omitted."
+    "app/layout.tsx": "Dashboard-specific navigation and 1.1.0 capability metadata; private company website pages and provider configuration omitted.",
+    "app/dashboard/SciencePlots.tsx": "Accessible interactive visualizations of returned experiment laws, witness costs and verified sensitivity results; decimal chart views do not replace exact reports.",
+    "app/dashboard/science-model.ts": "Shared input/result types, decimal display helpers, bounded notebook session metadata and validated import shapes; scientific calculations remain in the toolkit worker.",
+    "scripts/verify-dashboard-worker.mjs": "Runs the actual worker adapter against local Pyodide and the unchanged release wheel, including valid results, obstructions, certificate replay, tampering, domain and size rejections. Asset transport also checks standalone subpath resolution."
   },
-  "scientific_python_blocks_sha256": "644f2868c9cbda18fdec92080feae4ddb11bd3b8bc9c8f91024f20115cd1fdd1"
+  "scientific_python_blocks_sha256": "644f2868c9cbda18fdec92080feae4ddb11bd3b8bc9c8f91024f20115cd1fdd1",
+  "browser_adapter_modified": true,
+  "scientific_python_blocks_sha256_scope": "Historical 1.0.0 adapter fingerprint. The expanded 1.1.0 adapter is fingerprinted in files_sha256[public/research-worker.js]; released toolkit, scientific tutorial and frozen inputs remain byte-identical.",
+  "scientific_code_modified_scope": "Released scientific toolkit and retained research inputs; browser adapter additions are separately identified."
 }
